@@ -127,6 +127,8 @@ public class WeatherDetailFragment extends Fragment {
                 new SwipeRefreshLayout.OnRefreshListener() {
                     @Override
                     public void onRefresh() {
+                        dailyWeatherDetailList.clear();
+                        hourlyWeatherDetailList.clear();
                         Log.i(TAG, "onRefresh called from SwipeRefreshLayout");
                         // This method performs the actual data-refresh operation.
                         // The method calls setRefreshing(false) when it's finished.
