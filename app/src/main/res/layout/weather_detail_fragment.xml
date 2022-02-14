@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeRefreshLayout"
+    tools:context=".WeatherDetailFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/hourlyLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16px"
+                android:layout_marginEnd="16px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleHourlyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="Next hours"
+                    android:textSize="14pt" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/hourlyRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dailyLinearLayout"
+                android:layout_width="405dp"
+                android:layout_height="429dp"
+                android:layout_above="@id/updatedDetailLL"
+                android:layout_below="@id/hourlyLinearLayout"
+                android:layout_marginStart="16px"
+                android:layout_marginEnd="16px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleDailyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="Next 5 days"
+                    android:textSize="14pt" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/dailyRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/updatedDetailLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="16px"
+                android:layout_marginEnd="16px"
+                android:layout_marginBottom="8px"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/updatedAtTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last updated on: --:-- --" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+        android:src="@android:drawable/ic_popup_sync"/>
+
+    <LinearLayout
+        android:id="@+id/centerLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/topTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:text="ddd MMM yyyy"/>
+
+        <TextView
+            android:id="@+id/bottomTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear throughout day"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+        android:text="0° 0°" />
+
+</RelativeLayout>

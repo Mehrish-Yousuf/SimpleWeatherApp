@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.17291666666666666" />
+        <entry key="../../../../layout/custom_preview.xml" value="0.1796875" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_search.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/daily_recycler_view_adapter_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_scrolling.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/fragment_view_pager_adapter.xml" value="0.14918946301925026" />
+        <entry key="app/src/main/res/layout/hourly_recycler_view_adapter_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/main_fragment_container_fragment.xml" value="0.17044525146484377" />
+        <entry key="app/src/main/res/layout/options_menu.xml" value="0.1390625" />
+        <entry key="app/src/main/res/layout/weather_detail_fragment (1).xml" value="0.17325227963525835" />
+        <entry key="app/src/main/res/layout/weather_detail_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/main_acitivty_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/main_activity_menu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.3753860473632813" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
